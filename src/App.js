@@ -1,7 +1,12 @@
+import React from "react";
+import  ListaDeNotas  from "./components/ListaDeNotas";
 
 function App() {
   return (
-    <h1> Oii</h1>
+    <section>
+   
+   <ListaDeNotas />
+  </section>
   );
 }
 
