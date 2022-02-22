@@ -10,20 +10,17 @@ class FormularioCadastro extends Component {
 
   _handlerMudancaTitulo(evento){
     this.titulo = evento.target.value;
-    evento.stopPropagation();
-    console.log(this.titulo);
+    evento.stopPropagation(); 
   }
 
   _handlerMudancaTexto(evento){
     this.texto = evento.target.value;
     evento.stopPropagation();
-    console.log(this.texto);
   }
 
   _criarNota(evento){
     evento.preventDefault();
     evento.stopPropagation();
-    console.log(`nova nota carregada ${this.titulo} ${this.texto} `);
     this.props.criarNota(this.titulo, this.texto);
   }
 
